@@ -5,6 +5,7 @@ import ImagePicker from 'react-native-image-picker';
 import {styles} from './src/styles';
 import ContactComponent from './src/contact-component';
 import IconComponent from './src/icons';
+import SuperText from './src/supertext';
 
 class App extends Component {
 	state = {avatar: ''};
@@ -43,6 +44,7 @@ class App extends Component {
 				<Button title="gallery" onPress={this.launchGallery} />
 				<ContactComponent />
 				<IconComponent />
+				<SuperText style={{backgroundColor: 'red'}}>Haaaaaaloooooo :))</SuperText>
 			</View>
 		</ScrollView>);
 	}

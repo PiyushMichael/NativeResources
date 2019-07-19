@@ -4,6 +4,7 @@ import ImagePicker from 'react-native-image-picker';
 /*--------------------------------*/
 import {styles} from './src/styles';
 import ContactComponent from './src/contact-component';
+import IconComponent from './src/icons';
 
 class App extends Component {
 	state = {avatar: ''};
@@ -36,12 +37,12 @@ class App extends Component {
 		return (
 		<ScrollView>
 			<View style={styles.container}>
-				<Text>started from the bottom now we hya :)</Text>
 				<Image source={{uri:this.state.avatar}} style={styles.avatar} />
 				<Button title="add an image" onPress={this.addAvatar} />
 				<Button title="camera" onPress={this.launchCamera}/>
 				<Button title="gallery" onPress={this.launchGallery} />
 				<ContactComponent />
+				<IconComponent />
 			</View>
 		</ScrollView>);
 	}

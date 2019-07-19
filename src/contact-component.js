@@ -65,7 +65,6 @@ class ContactComponent extends Component {
 	
 	render(){
 		return (<View style={{marginTop: 20}}>
-			<Text>Contact Component eheh :)</Text>
 			<Button title="load contacts" onPress={this.getContacts} />
 			<Button title="add contacts" onPress={this.addContacts}/>
 			<Button title="open form" onPress={this.openForm} />
